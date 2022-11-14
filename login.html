@@ -5,13 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/setRem.js"></script>
 </head>
 
 <body>
 
+    <div class="box">
+        <iframe src="./public.html" frameborder="0"></iframe>
+        <p>
+            <a href="">首页</a> >
+            <a href="">我的</a> >
+            <a href="">登录</a>
+        </p>
+        <!-- 普通登录 -->
+        <div class="log_pt">
+            <p>
+                <span>普通登录</span>
+                <span class="log_kj_1">验证码快捷登录</span>
+            </p>
+            <p>
+                <input type="text" placeholder="请输入手机号码">
+            </p>
+            <p>
+                <input type="password" placeholder="请输入密码">
+            </p>
+            <p>立即登录</p>
+            <p>
+                <a href="">立即注册</a>
+                <a href="">忘记密码</a>
+            </p>
+        </div>
+        <!-- 验证码快捷登录 -->
+        <div class="log_kj">
+            <p>
+                <span class="log_pt_1">普通登录</span>
+                <span>验证码快捷登录</span>
+            </p>
+            <p>
+                <input type="text" placeholder="请输入手机号码">
+                <span>发送验证码</span>
+            </p>
+            <p>
+                <input type="password" placeholder="请输入短信中的验证码">
+            </p>
+            <p>验证并登录</p>
+            <p>
+                <a href="">立即注册</a>
+                <a href="">忘记密码</a>
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
+<script src="./js/login.js"></script>
+<script src="./js/touch-0.2.12.min.js"></script>
