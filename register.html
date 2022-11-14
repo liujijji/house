@@ -14,24 +14,29 @@
     <div class="box">
         <iframe src="./public.html" frameborder="0"></iframe>
         <p>
-            <a href="">首页</a> >
-            <a href="">我的</a> >
-            <a href="">注册</a>
+            <a href="./index.html">首页</a> >
+            <a href="./my.html">我的</a> >
+            <a href="./register.html">注册</a>
         </p>
         <div>
             <p>
-                <input type="text" placeholder="请输入手机号码">
-                <span>发送验证码</span>
+                <input type="text" id="phone" placeholder="请输入11位手机号码">
+                <span id="send">发送验证码</span>
+                <span id="phone-text">请输入11位手机号</span>
             </p>
             <p>
-                <input type="text" placeholder="请输入短信中的验证码">
+                <input type="text" id="verify" placeholder="请输入短信中的验证码">
+                <span id="verify-text">请输入验证码</span>
             </p>
             <p>
-                <input type="password" placeholder="请输入新密码">
+                <input type="password" id="newpass" placeholder="请输入6-12位数字新密码">
+                <span id="pass_text">请输入6-12位密码</span>
             </p>
-            <p>立即注册</p>
+            <p id="ljze">立即注册</p>
         </div>
     </div>
 </body>
 
 </html>
+<script src="./register.js"></script>
+<script src="./js/cookie.js"></script>
