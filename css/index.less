@@ -1,4 +1,305 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+iframe:nth-of-type(1){
+    width: 100%;
+    height: 5.75rem;
+}
+/* 最大的盒子 */
+.box{
+    width: 37.5rem;
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 350px;
+    background-color: #F5F5F5;
+    border: .1rem solid rgb(236, 236, 236);
+    /*顶部图片部分  找房无忧  */
+    .worry-free{
+        width: 100%;
+        height: 26rem;
+        margin-top: -.4rem;
+        background: url(../image/index/banner.png) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        .kuang{
+            width: 90%;
+            height: 4rem;
+       
+            display: flex;
+            position: absolute;
+            bottom: 2rem;
+            left: 1.6rem;
+          background-color: #fff;
+          border-radius: .6rem;
+          border: .1rem solid #000;
+          overflow: hidden;
+            span{
+                width: 10%;
+                height: 4rem;
+                background:url(../image/index/seach.jpg) no-repeat .8rem .8rem ;
+                background-size:70%;
+            }
+            input{
+                width: 90%;
+                height: 3.9rem;
+                font-size: 1.4rem;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    /* 四张圆型图片位置 */
+    .type{
+        width: 100%;
+        height: 15rem;
+        background-color: #FF8A00;
+        ul{
+            width: 90%;
+            height: 15rem;
+            display: flex;
+            margin: 0 auto;
+           align-items: center;
+            li{
+                flex: 1;
+                height: 10rem;
+                text-align: center;
+
+                p{
+                    color: #fff;
+                    font-size: 1.4rem;
+                    padding-top: 7rem;
+                }
+            }
+            &>li:nth-of-type(1){
+                background:url(../image/index/index_03.png) no-repeat .8rem 0 ;
+                background-size: 80%;
+            }
+            &>li:nth-of-type(2){
+                background:url(../image/index/index_05.png) no-repeat .8rem 0 ;
+                background-size: 80%;
+            }
+            &>li:nth-of-type(3){
+                background:url(../image/index/index_07.png) no-repeat .8rem 0 ;
+                background-size: 80%;
+            }
+            &>li:nth-of-type(4){
+                background:url(../image/index/index_09.png) no-repeat .8rem 0 ;
+                background-size: 80%;
+            }
+        }
+    }
+      /*  第二张大图部分*/
+      .tuu{
+        width: 100%;
+        height: 25rem;
+        margin-top: 2rem;
+        background: url(../image/index/banner2.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    /*  热门房源部分*/
+    .hot{
+        width: 100%;
+        background-color: #fff;
+        margin-top: 2rem;
+        border-bottom: .1rem solid #929492;
+        /* 标题 */
+        .title{
+            width: 100%;
+            height: 6rem;
+            background-color: #FF8A00;
+            display: flex;
+             justify-content: center ;
+            flex-direction: column;
+            padding-left: 5%;
+            color: white;
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                font-weight: 600;
+            }
+        }
+        /* 内容部分 */
+        ul{
+            width: 90%;
+            margin: 0 auto;
+            li{
+                width: 100%;
+                height: 15rem;
+                display: flex;
+                align-items: center;
+                border-bottom: .1rem solid #FF0000;
+                &>.layout{
+                    width: 100%;
+                    height: 12rem;
+                    display: flex;
+                    .photograph{
+                        width: 30%;
+                        background: url(../image/index/img1.jpg) no-repeat 0 1.5rem;
+                        background-size: 95%;
+                    }
+                    .writing{
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 1.4rem;
+                        justify-content:space-between;
+                        h3{
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            font-size: 2.1rem;
+                        }
+                        .board{
+                            display: flex;
+                            justify-content: space-between;
+                            color: #000;
+                            span{
+                                color: #FF8A00;
+                                font-weight: 600;
+                            }
+                        }
+                        .board1{
+                            display: flex;
+                            justify-content: space-between;
+                            color: #929492;
+                        }
+                        .district{
+                            display: flex;
+                            span{
+                                margin-right: 3%;
+                                padding: .2rem .3rem;
+                                color: #84A6C9;
+                                background-color: #daecf8;
+                            }
+                        }
+                    }
+                }
+            }
+            /* 调每一张图片位置 */
+           li:nth-of-type(2){
+            .layout{
+                .photograph{
+                        width: 30%;
+                        background: url(../image/index/img2.png) no-repeat 0 1.5rem;
+                        background-size: 95%;
+                    }
+                }
+            }
+            li:nth-of-type(3){
+                border-bottom: none;
+                .layout{
+                    .photograph{
+                            width: 30%;
+                            background: url(../image/index/img3.png) no-repeat 0 1.5rem;
+                            background-size: 95%;
+                        }
+                    }
+                }
+        }
+    }
+    /*热门关注 与 友情链接  */
+    .interlinkage{
+        width: 100%;
+        margin-top: 1rem;
+        background-color: #fff;
+        &>div{
+            width: 100%;
+            height: 6rem;
+            ul{
+                width: 100%;
+                height: 6rem;
+                border-bottom: .1rem solid #FF8A00;
+            display: flex;
+            li{
+                width: 50%;
+                text-align: center;
+                line-height: 6rem;
+                font-size: 2rem;
+            }
+            li:nth-of-type(1){
+                border-bottom: .1rem solid #FF8A00;
+                a{
+                    color:#FF8A00 ;
+                }
+            }
+            li:nth-of-type(2){
+                a{
+                    color:#666666;
+                }
+            }
+            }
+        }
+        &>ul{
+            width: 90%;
+            margin: 1rem auto;
+            li{
+                width: 100%;
+                height: 3.5rem;
+                font-size: 1.4rem;
+                display: flex;
+                align-items: center;
+                p{
+                    width: 50%;
+                    a{
+                        color: #666666;
+                    }
+                }
+            }
+        }
+    }
+        /* 底部 */
+        iframe:nth-of-type(2){
+            width: 100%;
+            height:17.6rem;
+        }
+        /* 下载app */
+
+    .download{
+        width: 100%;
+        height: 6rem;
+        background-color:rgba(0,0,0,0.5);
+        position: fixed;
+        bottom: 0;
+        ul{
+            width: 100%;
+            height: 6rem;
+            display: flex;
+            &>li:nth-of-type(1){
+                width:5%;
+                background: url(../image/index/close.png) no-repeat 0px 0px;
+                background-size: 100%;
+            }
+            &>li:nth-of-type(2){
+                width:25%;
+                background:url(../image/index/download.png) no-repeat 2.7rem 1.2rem;
+                background-size: 40%;
+            }
+            &>li:nth-of-type(3){
+                width:40%;
+                color: white;
+                p{
+                    font-size: 2rem;
+                    padding-top: .8rem;
+                }
+                span{
+                    font-size: 1.4rem;
+                }
+            }
+            &>li:nth-of-type(4){
+                width:30%;
+                background-color: #FF8A00;
+                text-align: center;
+                line-height: 6rem;
+                a{
+                    color: white;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
 }
