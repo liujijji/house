@@ -43,6 +43,10 @@ send_.onclick = function () {
             str = Math.round(Math.random() * 10000)
             str > 1000 ? str : str += 1000
             alert('本轮验证码为:' + str)
+        } else if (num == 0) {
+            send_.innerHTML = '发送验证码'
+            clearInterval(timer)
+            num = 60
         }
     }, 1000);
 }
@@ -114,3 +118,14 @@ ljze.onclick = function () {
 }
 
 
+// 判断是否登录，跳转不同的页面
+
+var is_n = document.getElementById('is_n')
+
+is_n.onclick = function () {
+    if (getCookie('sign')) {
+        location.href = './myLogin.html'
+    } else {
+        location.href = './my.html'
+    }
+}
