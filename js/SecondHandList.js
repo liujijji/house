@@ -32,8 +32,11 @@ for (var i = 0; i < top_.length; i++) {
             top1[q].style.display = "";
             top1[index].style.display = "block";
             top1[q].onclick = function() {
-                fnag_.onclick = function() {
-                    return false
+
+                fnag_.onclick = function(e) {
+                    e = e || window.event;
+                    window.event ? e.returnValue = false : e.preventDefault();
+                    fnag_.style.display = "block";
                 }
                 top1[index].style.display = "none"
                 model.style.position = "";
@@ -42,7 +45,6 @@ for (var i = 0; i < top_.length; i++) {
                 top_span[index].id = '';
             }
         }
-
 
     }
 }
