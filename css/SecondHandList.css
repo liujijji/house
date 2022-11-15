@@ -236,3 +236,100 @@ iframe:nth-of-type(1) {
 .box .top1 .qian ul li:last-of-type {
   border-bottom: none;
 }
+.box .top1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 11, 11, 0.421);
+  position: absolute;
+  top: 5rem;
+  display: none;
+}
+.box .top1 .fnag {
+  background-color: #fff;
+  width: 100%;
+}
+.box .top1 .fnag ul {
+  width: 90%;
+  height: 37rem;
+  margin: 0 auto;
+}
+.box .top1 .fnag ul li {
+  width: 100%;
+  border-bottom: 0.1rem solid #D3D3D3;
+  height: 5rem;
+  display: flex;
+  line-height: 5rem;
+  align-items: center;
+}
+.box .top1 .fnag ul li p {
+  padding-left: 1rem;
+  flex: 1;
+  font-size: 1.4rem;
+}
+.box .top1 .fnag ul li span {
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid #b0b0b0;
+}
+.box .top1 .fnag ul li .ss {
+  background: url(../image/SecondHandList/ok.png) no-repeat 0 0.2rem;
+  background-size: 100%;
+}
+.box .top1 .fnag ul li button {
+  width: 100%;
+  height: 5rem;
+  background-color: #FF8A00;
+  color: white;
+  text-align: center;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 5rem;
+}
+.box .top1 .fnag ul li:last-of-type {
+  border-bottom: none;
+}
+.box .top1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 11, 11, 0.421);
+  position: absolute;
+  top: 5rem;
+  display: none;
+}
+.box .top1 .geng {
+  background-color: #fff;
+  width: 100%;
+}
+.box .top1 .geng ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .top1 .geng ul .li {
+  width: 100%;
+  height: 18rem;
+}
+.box .top1 .geng ul li {
+  width: 100%;
+  height: 14rem;
+  border-bottom: 0.1rem solid #b0b0b0;
+}
+.box .top1 .geng ul li h3 {
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.6rem;
+}
+.box .top1 .geng ul li .d2 {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box .top1 .geng ul li .d2 p {
+  text-align: center;
+  width: 20%;
+  margin-right: 3%;
+  height: 3rem;
+  line-height: 3rem;
+  border: 0.1rem solid #CCCCCC;
+}
