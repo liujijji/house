@@ -21,6 +21,10 @@ iframe:nth-of-type(1) {
   /* 大图位置 */
   /* 关注 */
   /*  租金  */
+  /* 楼层详细  */
+  /* 经纪人房评 */
+  /*  */
+  /* 底部 */
 }
 .box .beijing {
   width: 100%;
@@ -107,4 +111,208 @@ iframe:nth-of-type(1) {
   font-size: 1.4rem;
   padding-left: 1rem;
   color: #666666;
+}
+.box .rental {
+  width: 100%;
+  height: 10rem;
+}
+.box .rental ul {
+  width: 90%;
+  height: 10rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .rental ul li {
+  flex: 1;
+  height: 5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  border-right: 0.1rem solid #DCDCDC;
+}
+.box .rental ul li span {
+  color: #FF8A00;
+}
+.box .rental ul li:last-of-type {
+  border-right: none;
+}
+.box .level {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #DCDCDC;
+  border-top: 0.1rem solid #DCDCDC;
+}
+.box .level ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .level ul li {
+  width: 100%;
+  height: 6rem;
+  border-bottom: 0.1rem solid #DCDCDC;
+  font-size: 1.4rem;
+  color: #000;
+  line-height: 6rem;
+  display: flex;
+}
+.box .level ul li p {
+  flex: 1 ;
+}
+.box .level ul li:last-of-type {
+  border-bottom: none;
+}
+.box .appraiser {
+  width: 100%;
+  margin-top: 2rem;
+}
+.box .appraiser ul {
+  width: 90%;
+  margin: 0 auto;
+  border: 0.1rem solid #DCDCDC;
+  background-color: #fff;
+}
+.box .appraiser ul > li:nth-of-type(1) {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+  border-bottom: 0.1rem solid #DCDCDC;
+  color: #FF8A00;
+  background: url(../image/rentalList/right.png) no-repeat 95% 1.6rem;
+  background-size: 1rem;
+}
+.box .appraiser ul > li:nth-of-type(1) p {
+  padding-left: 1rem;
+}
+.box .appraiser ul > li:nth-of-type(2) {
+  padding: 1rem 1rem;
+  color: #000;
+  font-size: 1.4rem;
+}
+.box .ambitus {
+  width: 100%;
+  margin-top: 2rem;
+}
+.box .ambitus ul {
+  width: 90%;
+  margin: 0 auto;
+  border: 0.1rem solid #DCDCDC;
+  background-color: #fff;
+}
+.box .ambitus ul > li:nth-of-type(1) {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+  border-bottom: 0.1rem solid #DCDCDC;
+  color: #FF8A00;
+  background: url(../image/rentalList/right.png) no-repeat 95% 1.6rem;
+  background-size: 1rem;
+}
+.box .ambitus ul > li:nth-of-type(1) p {
+  padding-left: 1rem;
+}
+.box .ambitus ul > li:nth-of-type(2) {
+  width: 95%;
+  margin: 1rem auto;
+  border: 0.1rem solid #DCDCDC;
+}
+.box .ambitus ul > li:nth-of-type(2) div {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #000;
+  border-bottom: 0.1rem solid #DCDCDC;
+}
+.box .ambitus ul > li:nth-of-type(2) iframe {
+  width: 100%;
+  height: 28rem;
+}
+.box .bargain {
+  width: 100%;
+  margin-top: 2rem;
+}
+.box .bargain ul {
+  width: 90%;
+  margin: 0 auto;
+  border: 0.1rem solid #DCDCDC;
+  background-color: #fff;
+}
+.box .bargain ul > li:nth-of-type(1) {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+  border-bottom: 0.1rem solid #DCDCDC;
+  color: #FF8A00;
+  background: url(../image/rentalList/right.png) no-repeat 95% 1.6rem;
+  background-size: 1rem;
+}
+.box .bargain ul > li:nth-of-type(1) p {
+  padding-left: 1rem;
+}
+.box .bargain ul > li:nth-of-type(2) {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.box .bargain ul > li:nth-of-type(2) p {
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  color: #000;
+}
+.box .bargain ul > li:nth-of-type(2) p span {
+  color: #FF8A00;
+}
+.box .san {
+  width: 100%;
+  height: 7rem;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+.box .san ul {
+  width: 90%;
+  height: 7rem;
+  display: flex;
+  margin: 0 auto;
+}
+.box .san ul > li:nth-of-type(1) {
+  flex: 1;
+  background: url(../image/rentalList/man.png) no-repeat 0 0.9rem;
+  background-size: 80% 80%;
+}
+.box .san ul > li:nth-of-type(2) {
+  flex: 2;
+  font-size: 1.4rem;
+  padding-top: 0.9rem;
+}
+.box .san ul > li:nth-of-type(3) {
+  flex: 1;
+  font-size: 1.4rem;
+  color: #5DCB96;
+  text-align: center;
+  padding-top: 4rem;
+  background: url(../image/rentalList/icon1.png) no-repeat 1.7rem 0.7rem;
+  background-size: 50%;
+}
+.box .san ul > li:nth-of-type(4) {
+  flex: 1;
+  font-size: 1.4rem;
+  color: #5BAEDE;
+  text-align: center;
+  padding-top: 4rem;
+  background: url(../image/rentalList/icon2.png) no-repeat 1.7rem 0.7rem;
+  background-size: 50%;
+}
+.box iframe:nth-of-type(2) {
+  width: 100%;
+  height: 20rem;
 }
