@@ -5,13 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <title>我关注的小区</title>
+    <link rel="stylesheet" href="./css/myHouse.css">
+    <script src="./js/setRem.js"></script>
 </head>
 
 <body>
-
+    <!-- 最大的盒子 -->
+    <div class="box">
+        <iframe src="./public.html" frameborder="0"></iframe>
+        <!-- 关注小区 -->
+        <div class="plot">
+            <ul>
+                <li>
+                    <a href="./index.html" class="a1">首页</a> >
+                </li>
+                <li>
+                    <a href="#">我的</a> >
+                </li>
+                <li>
+                    <a href="#">我关注的小区</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 内容部分 -->
+        <div class="box1">
+            <ul>
+                <li>
+                    <!-- 图片位置 -->
+                    <div class="picture">
+                        <img src="./image/my/img1.png" alt="">
+                    </div>
+                    <!-- 右边部分 -->
+                    <div class="part">
+                        <h3>辉煌国际</h3>
+                        <p>昌平区-回龙观</p>
+                        <p>2007年建成<span>37050元/平</span></p>
+                        <p>板塔结构</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片位置 -->
+                    <div class="picture">
+                        <img src="./image/my/img2.png" alt="">
+                    </div>
+                    <!-- 右边部分 -->
+                    <div class="part">
+                        <h3>万寿园</h3>
+                        <p>昌平区-回龙观</p>
+                        <p>2007年建成<span>56447元/平</span></p>
+                        <p>板塔结构</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片位置 -->
+                    <div class="picture">
+                        <img src="./image/my/img3.png" alt="">
+                    </div>
+                    <!-- 右边部分 -->
+                    <div class="part">
+                        <h3>红莲南里5号</h3>
+                        <p>昌平区-回龙观</p>
+                        <p>2007年建成<span>89776元/平</span></p>
+                        <p>板塔结构</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片位置 -->
+                    <div class="picture">
+                        <img src="./image/my/img4.png" alt="">
+                    </div>
+                    <!-- 右边部分 -->
+                    <div class="part">
+                        <h3>万寿西街16号</h3>
+                        <p>昌平区-回龙观</p>
+                        <p>2007年建成<span>90778元/平</span></p>
+                        <p>板塔结构</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <iframe src="./公用部分.html" frameborder="0"></iframe>
+    </div>
 </body>
 
 </html>
+<script src="./js/touch-0.2.12.min.js"></script>
+
+<!-- 左滑或者右滑切换页面 -->
+<script>
+    // 找到最大的盒子
+    var box_ = document.getElementsByClassName('box')[0];
+    // console.log(box_);
+    // 左滑事件
+    touch.on(box_, 'swipeleft', function() {
+            // 首页
+            location.href = './index.html'
+        })
+        // 右滑事件
+    touch.on(box_, 'swiperight', function() {
+        // 租房
+        location.href = './rentalList.html'
+
+    })
+</script>

@@ -5,13 +5,282 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <title>二手房</title>
+    <link rel="stylesheet" href="./css/SecondHandList.css">
+    <script src="./js/setRem.js"></script>
 </head>
 
 <body>
+    <!-- 最大的盒子 -->
+    <div class="box">
+        <iframe src="./public.html" frameborder="0"></iframe>
 
+        <!-- 搜索框部分-->
+        <div class="seek">
+            <div>
+                <input type="search" placeholder="请输入小区名或者商圈名">
+                <span>|</span>
+                <span>
+                    <a href="">
+                        <img src="./image/SecondHandList/search_03.png" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+        <!-- 选型区域 -->
+        <div class="model">
+            <div>
+                <ul>
+                    <li class="top">
+                        <a class="top-a">区域</a>
+                        <span class="top-span"></span>
+                    </li>
+                    <li class="top">
+                        <a class="top-a">价格</a>
+                        <span class="top-span"></span>
+                    </li>
+                    <li class="top">
+                        <a class="top-a">房型</a>
+                        <span class="top-span"></span>
+                    </li>
+                    <li class="top">
+                        <a class="top-a">更多</a>
+                        <span class="top-span"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 内容部分 -->
+        <div class="matter">
+            <ul>
+                <li>
+                    <div>
+                        <div>
+                            <img src="./image/SecondHandList/img1.png" alt="">
+                        </div>
+                        <div>
+                            <h2>西便门外大街2室1厅89平</h2>
+                            <p>南北 高楼层/6层</p>
+                            <p>签约价格:13244元/平 <span>1105万</span></p>
+                            <p>签约日期:2015年11月10日</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <img src="./image/SecondHandList/img2.png" alt="">
+                        </div>
+                        <div>
+                            <h2>金桥国际 1室1厅 63平</h2>
+                            <p>南北 高楼层/6层</p>
+                            <p>签约价格:13244元/平<span>905万</span></p>
+                            <p>签约日期:2015年11月10日</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <img src="./image/SecondHandList/img3.png" alt="">
+                        </div>
+                        <div>
+                            <h2>花涧溪二期 2室2厅 90平</h2>
+                            <p>南北 高楼层/6层</p>
+                            <p>签约价格:13244元/平 <span>1322万</span></p>
+                            <p>签约日期:2015年11月10日</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <iframe src="./公用部分.html" frameborder="0"></iframe>
+        <!--   区域点击显示代码 -->
+        <div class="top1">
+            <!-- n内容部分 -->
+            <div class="box5">
+                <!-- 左边部分 -->
+                <div class="lf1">
+                    <div>区域</div>
+                    <div>地铁</div>
+                </div>
+                <!-- 右边部分 -->
+                <div class="re1">
+                    <ul>
+                        <li>
+                            <p>附近</p>
+                            <p class="pp">不限</p>
+                        </li>
+                        <li>
+                            <p>不限</p>
+                            <p>安贞</p>
+                        </li>
+                        <li>
+                            <p class="pp">朝阳</p>
+                            <p>奥林匹克公园</p>
+                        </li>
+                        <li>
+                            <p>海淀</p>
+                            <p>百子湾</p>
+                        </li>
+                        <li>
+                            <p>昌平</p>
+                            <p>北工大</p>
+                        </li>
+                        <li>
+                            <p>丰台</p>
+                            <p>北苑</p>
+                        </li>
+                        <li>
+                            <p>石景山</p>
+                            <p>CBD</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 价钱部分 -->
+        <div class="top1">
+            <div class="qian">
+                <ul>
+                    <li>
+                        <p>不限</p>
+                    </li>
+                    <li>
+                        <p>100万以下</p>
+                    </li>
+                    <li>
+                        <p>100万-150万</p>
+                    </li>
+                    <li>
+                        <p>150万-200万</p>
+                    </li>
+                    <li>
+                        <p>200万-250万</p>
+                    </li>
+                    <li>
+                        <p>250万-300万</p>
+                    </li>
+                    <li>
+                        <p>自定义价格</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 房型 -->
+        <div class="top1">
+            <div class="fnag">
+                <ul>
+                    <li>
+                        <p>不限</p>
+                        <span></span>
+                    </li>
+                    <li>
+                        <p>1室</p>
+                        <span></span>
+                    </li>
+                    <li>
+                        <p>2室</p>
+                        <span class="ss"></span>
+                    </li>
+                    <li>
+                        <p>3室</p>
+                        <span></span>
+                    </li>
+                    <li>
+                        <p>4室</p>
+                        <span></span>
+                    </li>
+                    <li>
+                        <p>5室</p>
+                        <span></span>
+                    </li>
+                    <li>
+                        <button>确定</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 更多 -->
+        <div class="top1">
+            <div class="geng">
+                <ul>
+                    <li>
+                        <h3>区域</h3>
+                        <div class="d2">
+                            <p>南</p>
+                            <p>南北</p>
+                            <p>东</p>
+                            <p>西</p>
+                            <p>北</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>面积(平方)</h3>
+                        <div class="d2">
+                            <p>50以下</p>
+                            <p>50-70</p>
+                            <p>70-90</p>
+                            <p>90-100</p>
+                            <p>110-130</p>
+                            <p>130-150</p>
+                            <p>150-200</p>
+                            <p>200以上</p>
+                        </div>
+                    </li>
+                    <li class="li">
+                        <h3>标签</h3>
+                        <div class="d2">
+                            <p>学区房</p>
+                            <p>地铁房</p>
+                            <p>不限购</p>
+                            <p>满两年</p>
+                            <p>满五唯一</p>
+                            <p>降价</p>
+                            <p>新上</p>
+                            <p>独家</p>
+                            <p>钥匙</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>楼龄</h3>
+                        <div class="d2">
+                            <p>五年以内</p>
+                            <p>十年以内</p>
+                            <p>10-20年</p>
+                            <p>20年以上</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
 </body>
 
 </html>
+<script src="./js/SecondHandList.js"></script>
+
+
+<!-- 滑动事件 -->
+<script src="./js/touch-0.2.12.min.js"></script>
+
+<!-- 左滑或者右滑切换页面 -->
+<script>
+    // 找到最大的盒子
+    var box_ = document.getElementsByClassName('box')[0];
+    // console.log(box_);
+    // 左滑事件
+    touch.on(box_, 'swipeleft', function() {
+            // 租房详情
+            location.href = './SecondHandDetails.html'
+        })
+        // 右滑事件
+    touch.on(box_, 'swiperight', function() {
+        // 首页
+        location.href = './index.html'
+    })
+</script>

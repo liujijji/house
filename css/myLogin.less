@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.box {
+    width: 37.5rem;
+    height: 100vh;
+    margin: 0 auto;
+    min-width: 35rem;
+    max-width: 60rem;
+    background-color: rgb(245, 245, 245);
+    border: .1rem solid rgb(236, 236, 236);
+
+    iframe {
+        width: 100%;
+        height: 5.7rem;
+    }
+
+    &>p:nth-of-type(1) {
+        padding: 1.2rem 2rem;
+        font-size: 1.4rem;
+        border-bottom: .01rem rgb(192, 192, 192) solid;
+
+        &>a {
+            color: rgb(43, 43, 43);
+        }
+
+        &>a:nth-of-type(1) {
+            color: black;
+            font-weight: 600;
+        }
+    }
+
+    &>div:nth-of-type(1) {
+        height: 16.5rem;
+        background: url(../image/my/bg2.png)no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+        &>p:nth-of-type(1) {
+            text-align: center;
+            margin-top: 2.5rem;
+
+            &>img {
+                width: 6.5rem;
+            }
+        }
+
+        &>p:nth-of-type(2) {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            color: white;
+        }
+    }
+
+    ul {
+        background-color: white;
+        padding: 0 1.8rem;
+        border-bottom: .1rem rgb(214, 214, 214) solid;
+
+        &>li {
+            height: 5.5rem;
+            line-height: 5.5rem;
+            border-bottom: .1rem rgb(214, 214, 214) solid;
+            font-size: 1.4rem;
+            color: rgb(99, 99, 99);
+            background: url(../image/my/right.png)no-repeat 32.3rem 1.8rem;
+            background-size: 1.2rem 2.2rem;
+        }
+
+        &>li:last-of-type {
+            border: none;
+        }
+    }
+
+    &>p:last-of-type {
+        width: 95%;
+        height: 5rem;
+        line-height: 4.8rem;
+        text-align: center;
+        margin: 0 auto;
+        background-color: white;
+        border: .1rem rgb(222, 222, 222) solid;
+        font-size: 1.5rem;
+        color: rgb(246, 97, 0);
+        margin-top: 3.5rem;
+    }
+}

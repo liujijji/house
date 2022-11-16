@@ -6,12 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./js/setRem.js"></script>
 </head>
 
 <body>
-
+    <div class="box">
+        <!-- 头部 -->
+        <header>
+            <ul>
+                <!-- 左边图片 -->
+                <li>
+                    <a class="a1">
+                        <img src="./image/index/logo.jpg" alt="">
+                    </a>
+                </li>
+                <!--右边两个部分  -->
+                <li>
+                    <a class="a2">
+                        <img src="./image/index/my.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="a3">
+                        <img src="./image/index/xiazai.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </div>
 </body>
 
 </html>
+<script src="./js/cookie.js"></script>
+<script>
+    var a1_ = document.getElementsByClassName('a1')[0]
+    var a2_ = document.getElementsByClassName('a2')[0]
+    var a3_ = document.getElementsByClassName('a3')[0]
+    a1_.onclick = function() {
+        parent.location.href = './index.html'
+    }
+    a2_.onclick = function() {
+        // 判断是否登录，跳转不同的页面
+        if (getCookie('sign')) {
+            parent.location.href = './myLogin.html'
+        } else {
+            parent.location.href = './my.html'
+        }
+    }
+    a3_.onclick = function() {
+        parent.location.href = 'https://www.wyzfang.com/'
+    }
+</script>
