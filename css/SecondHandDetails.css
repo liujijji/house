@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+/* 公用部分 */
+iframe:nth-of-type(1) {
+  width: 100%;
+  height: 5.76rem;
+}
+.box {
+  width: 37.5rem;
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 350px;
+  background-color: #F5F5F5;
+  border: 0.1rem solid #ececec;
+  /*  顶部图片部分 */
+  /*小区介绍  */
+  /*  详细部分 */
+  /*房源特色  */
+  /* 户型分间  */
+  /* 对口学校  */
+  /*  位置及周边*/
+  /* 推荐房源 */
+  /* 联系经纪人部分 */
+  /* 底部 */
+}
+.box .top {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+}
+.box .top img {
+  width: 100%;
+  height: 100%;
+}
+.box .top .location {
+  width: 3rem;
+  height: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  right: 2rem;
+  bottom: 1.5rem;
+}
+.box .introduce {
+  width: 100%;
+  background-color: #fff;
+  padding: 1.5rem 0;
+  border-bottom: 0.1rem solid #E5E5E5;
+  /*多少平部分   */
+}
+.box .introduce .intr {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .introduce .intr h1 {
+  font-size: 2.1rem;
+}
+.box .introduce .intr > p {
+  color: #B0B0B0;
+  font-size: 1.4rem;
+}
+.box .introduce .intr > ul {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  line-height: 3rem;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+.box .introduce .intr > ul li {
+  height: 3rem;
+  font-size: 1.4rem;
+  margin-right: 3%;
+  background-color: #DEE9F0;
+}
+.box .introduce .intr > ul li a {
+  color: #8AA0B2;
+  padding: 0 0.3rem;
+}
+.box .introduce .flat {
+  width: 100%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.6rem;
+  background: url(../image/SecondHandList/phone.png) no-repeat 99% 0.8rem;
+  background-size: 1.5rem;
+}
+.box .introduce .flat span {
+  color: #DB4C3F;
+  font-weight: 600;
+}
+.box .minute {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.box .minute ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .minute ul li {
+  width: 100%;
+  height: 6.3rem;
+  line-height: 6.3rem;
+  font-size: 1.4rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  display: flex;
+}
+.box .minute ul li > div:nth-of-type(1) {
+  flex: 1;
+}
+.box .minute ul li > div:nth-of-type(2) {
+  flex: 1;
+}
+.box .minute ul li > a {
+  flex: 1;
+  color: #999999;
+  text-align: center;
+}
+.box .minute ul > li:nth-of-type(9) {
+  border-bottom: none;
+}
+.box .feature {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.box .feature ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .feature ul > li:nth-of-type(1) {
+  width: 100%;
+  height: 6.3rem;
+  line-height: 6.3rem;
+  font-size: 1.8rem;
+  color: #FF9326;
+  font-weight: 700;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.box .feature ul > li:nth-of-type(2) {
+  border-bottom: 0.1rem solid #E5E5E5;
+  font-size: 1.4rem;
+  color: #000;
+  padding: 1.8rem 0;
+}
+.box .feature ul > li:nth-of-type(3) {
+  width: 100%;
+  height: 6.3rem;
+  line-height: 6.3rem;
+  text-align: center;
+}
+.box .feature ul > li:nth-of-type(3) a {
+  font-size: 1.4rem;
+  color: #999;
+}
+.box .type {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 2rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.box .type ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .type ul > li:nth-of-type(1) {
+  width: 100%;
+  height: 6.3rem;
+  line-height: 6.3rem;
+  font-size: 1.8rem;
+  color: #FF9326;
+  font-weight: 700;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.box .type ul > li:nth-of-type(2) {
+  padding: 2rem 0;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  border-bottom: 0.1rem solid #FF8A00;
+}
+.box .type ul > li:nth-of-type(2) .tu {
+  flex: 1;
+}
+.box .type ul > li:nth-of-type(2) .tu img {
+  width: 80%;
+  height: 100%;
+}
+.box .type ul > li:nth-of-type(2) .text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box .type ul > li:nth-of-type(2) .text p {
+  font-size: 1.4rem;
+}
+.box .type ul > li:nth-of-type(2) .text > div {
+  display: flex;
+}
+.box .type ul > li:nth-of-type(2) .text > div > span {
+  width: 28%;
+  font-size: 1.4rem;
+  margin-right: 3%;
+  color: #849AAE;
+  padding: 0.2rem 0.2rem;
+  background-color: #F4F7F9;
+}
+.box .type ul > li:nth-of-type(3) {
+  padding: 2rem 0;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+}
+.box .type ul > li:nth-of-type(3) .tu {
+  flex: 1;
+}
+.box .type ul > li:nth-of-type(3) .tu img {
+  width: 80%;
+  height: 100%;
+}
+.box .type ul > li:nth-of-type(3) .text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box .type ul > li:nth-of-type(3) .text p {
+  font-size: 1.4rem;
+}
+.box .type ul > li:nth-of-type(3) .text > div {
+  display: flex;
+}
+.box .type ul > li:nth-of-type(3) .text > div > span {
+  width: 28%;
+  font-size: 1.4rem;
+  margin-right: 3%;
+  color: #849AAE;
+  padding: 0.2rem 0.2rem;
+  background-color: #F4F7F9;
+}
+.box .school {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 2rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.box .school ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .school ul li {
+  height: 6.3rem;
+  line-height: 6.3rem;
+  width: 100%;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.box .school ul li > p {
+  font-size: 1.4rem;
+  color: #999B9C;
+}
+.box .school ul li > p span {
+  color: #000;
+}
+.box .school ul > li:nth-of-type(1) {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.box .school ul > li:nth-of-type(7) {
+  text-align: center;
+  font-size: 1.4rem;
+  border-bottom: none;
+}
+.box .school ul > li:nth-of-type(7) a {
+  color: #A1A1A1;
+}
+.box .rim {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.box .rim ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .rim ul li {
+  width: 100%;
+}
+.box .rim ul > li:nth-of-type(1) {
+  height: 6.3rem;
+  line-height: 6.3rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.box .rim ul > li:nth-of-type(2) {
+  padding: 1rem 0;
+}
+.box .rim ul > li:nth-of-type(2) iframe {
+  width: 100%;
+  height: 28rem;
+}
+.box .resource {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.box .resource ul {
+  width: 90%;
+  margin: 0 auto;
+  /* 定位部分 */
+}
+.box .resource ul li {
+  width: 100%;
+}
+.box .resource ul > li:nth-of-type(1) {
+  height: 6.3rem;
+  line-height: 6.3rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.box .resource ul > .list {
+  padding: 1.5rem 0;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.box .resource ul > .list .melody {
+  display: flex;
+}
+.box .resource ul > .list .melody .picture {
+  width: 35%;
+  height: 9.3rem;
+}
+.box .resource ul > .list .melody .picture img {
+  width: 80%;
+  height: 90%;
+}
+.box .resource ul > .list .melody .texit {
+  width: 65%;
+  height: 9.3rem;
+}
+.box .resource ul > .list .melody .texit #h3 {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box .resource ul > .list .melody .texit .box1 {
+  display: flex;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  justify-content: space-between;
+}
+.box .resource ul > .list .melody .texit .box1 span {
+  color: #FF8A00;
+  font-weight: 600;
+}
+.box .resource ul > .list .melody .texit .box2 {
+  display: flex;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  color: #999;
+}
+.box .resource ul > .list .melody .texit > p {
+  width: 25%;
+  font-size: 1.4rem;
+  color: #849AAE;
+  padding: 0.2rem 0.2rem;
+  background-color: #F4F7F9;
+}
+.box .resource ul .box3 {
+  width: 100%;
+  height: 4rem;
+  margin-top: 2rem;
+  line-height: 4rem;
+  background-color: #F2F2F2;
+  position: relative;
+}
+.box .resource ul .box3 p {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  color: #000;
+}
+.box .resource ul .box3 .p1 {
+  width: 1rem;
+  height: 1rem;
+  border: 1rem solid #F2F2F2;
+  border-top: 1rem solid transparent;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  position: absolute;
+  top: -1.9rem;
+  left: 1rem;
+}
+.box .resource .more {
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.4rem;
+}
+.box .resource .more a {
+  color: #666;
+}
+.box .broker {
+  width: 90%;
+  height: 5rem;
+  margin: 1rem auto;
+  display: flex;
+}
+.box .broker .left {
+  width: 70%;
+  height: 5rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  line-height: 5rem;
+  color: white;
+  font-size: 1.6rem;
+  background: url(../image/SecondHandList/user.png) no-repeat 6rem 0.9rem;
+  background-size: 3rem;
+  background-color: #FF8A00;
+}
+.box .broker .left p {
+  padding-left: 2rem;
+}
+.box .broker .right {
+  width: 30%;
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  color: #666;
+  font-size: 1.6rem;
+  background: url(../image/SecondHandList/xin.png) no-repeat 1.1rem 1.1rem;
+  background-size: 3rem;
+}
+.box .broker .right p {
+  padding-left: 2rem;
+}
+.box iframe:nth-of-type(2) {
+  width: 100%;
+  height: 20rem;
+}

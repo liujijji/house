@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+/* 公用部分 */
+iframe:nth-of-type(1){
+    width: 100%;
+    height: 5.76rem;
+}
+//* 最大盒子 */
+.box{
+    width: 37.5rem;
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 350px;
+    background-color: #F5F5F5;
+    border: .1rem solid rgb(236, 236, 236);
+    .beijing{
+        width: 100%;
+        height: 4rem;
+        background-color: #fff;
+        border: .1rem solid rgb(236, 236, 236);
+        ul{
+            width: 90%;
+            height: 4rem;
+            margin: 0 auto;
+            line-height: 4rem;
+            display: flex;
+            li{
+                font-size: 1.4rem;
+                a{
+                    color: #000;
+                }
+                .a1{
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    /* 搜索框部分 */
+    .seek{
+        width: 100%;
+        height: 7rem;
+        overflow: hidden;
+        &>div{
+            width: 90%;
+            height: 5rem;
+            margin: 1rem auto;
+            border-radius: .4rem;
+            border: .1rem solid #D3D3D3;
+            background-color: #fff;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            &>input{
+                width: 80%;
+                height: 4.75rem;
+                border: none;
+                outline: none;
+                padding-left: 1rem;
+                font-size: 1.6rem;
+            }
+            &>span:nth-of-type(2){
+                width: 14%;
+            a{
+                img{
+                    width: 60%;
+                    margin-left: 1.5rem;
+
+                }
+            }
+            
+            }
+        }
+    }
+      /*选型区域  */
+      .model{
+        width: 100%;
+        height: 5rem;
+        background-color: #fff;
+        border-bottom: .1rem solid #CCCCCC;
+        border-top: .1rem solid #CCCCCC;
+        &>div{
+            width: 90%;
+            height:5rem;
+            margin: 0  auto;
+            &> ul{
+                display: flex;
+              
+                &>li{
+                    flex: 1;
+                    display: flex;
+                    line-height: 5rem;
+                    justify-content: center;
+                    &>a{
+                        // line-height: 5rem;
+                        color: #666666;
+                        font-weight: 600;
+                        font-size: 2.1rem;
+                    }
+                      // 点击之后出现的样式用类名 s接收
+                      #s{
+                        color: #FF8A00;
+                        font-weight: 600;
+                        font-size: 2.1rem;
+                    }
+                    // 三角形部分  s1
+                    #s1{
+                        height: .6rem;
+                        margin-left: .5rem;
+                        margin-top: 1.7rem;
+                        border: .5rem solid  #FF8A00;
+                        border-top: .5rem solid transparent;
+                        border-left: .5rem solid transparent;
+                        border-right: .5rem solid transparent;
+                    }
+                    &>span{
+                        // display: inline-block;
+                        height: .6rem;
+                        margin-left: .5rem;
+                        margin-top: 1.7rem;
+                        border: .5rem solid  #CCCCCC;
+                        border-bottom: .5rem solid transparent;
+                        border-left: .5rem solid transparent;
+                        border-right: .5rem solid transparent;
+                    }
+                }
+
+            }
+        }
+    }
+    /* 内容部分  */
+    .details{
+        width: 100%;
+        ul{
+            width: 90%;
+            margin: 0 auto;
+            li{
+                padding: 2rem 0;
+                border-bottom: .1rem solid #FF8A00;
+                height: 14.5rem;
+                display: flex;
+                .tu{
+                    flex: 1;
+                    align-self: center;
+                    img{
+                        width: 9rem;
+                        height:9rem;
+                    }
+                }
+                .text{
+                    flex: 2;
+                   display: flex;
+                   flex-direction: column;
+                    justify-content: space-between;
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                   &>p{
+                        font-size: 1.4rem;
+                        color: #000;
+                    }
+                    .again{
+                        display: flex;
+                        justify-content: space-between;
+                    p{
+                        color: #6DA78B;
+                        padding: .2rem .3rem;
+                        border: .1rem solid #6DA78B;
+                    }
+                    span{
+                        color: #FF8A00;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                    }
+                    }
+                }
+            }
+            li:last-of-type{
+                border-bottom: none;
+            }
+        }
+        
+    }
+        /* 底部 */
+iframe:nth-of-type(2){
+    width: 100%;
+    height:20rem;
+}
+ /* 区域点击显示代码 */
+ .top1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 11, 0.421);
+    position: absolute;
+    top: 5rem;
+    display: none;
+    .box5{
+        width: 100%;
+        height: 30rem;
+        background-color: #fff;
+        display: flex;
+        .lf1{
+            width: 20%;
+            text-align: center;
+            &>div:nth-of-type(1){
+                width: 100%;
+                height: 5rem;
+                line-height: 5rem;
+                color: #FF8A00;
+                font-weight:700;
+                font-size: 2rem;
+            }
+            &>div:nth-of-type(2){
+                width: 100%;
+                height: 25rem;
+                font-size: 2rem;
+                color: #000;
+                line-height: 5rem;
+                font-weight:700;
+                background-color: #F0F0F0;
+                border-right: .1rem solid #666666;
+            }
+
+        }
+        .re1{
+            width: 80%;
+           ul{
+            width: 100%;
+            height: 30rem;
+           
+            li{
+                width: 100%;
+                height: 4.4rem;
+                text-align: center;
+                line-height: 4.4rem;
+                display: flex;
+                p{
+                    width: 50%;
+                    color: #666666;
+                    font-size: 1.4rem;
+                }
+                .pp{
+                    color: #FF8A00;
+                }
+            }
+        }
+        }
+    }
+}
+// 价钱部分
+.top1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 11, 0.421);
+    position: absolute;
+    top: 5rem;
+    display: none;
+   .qian{
+    background-color: #fff;
+    width: 100%;
+
+    ul{
+        width: 95%;
+        height: 35rem;
+        margin: 0 auto;
+        li{
+            width: 100%;
+            height: 5rem;
+            line-height: 5rem;
+            color: #666666;
+            border-bottom: .1rem solid #D3D3D3;
+        }
+        li:last-of-type{
+            border-bottom: none;
+        }
+        
+    }
+   }
+}
+// 房型 
+.top1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 11, 0.421);
+    position: absolute;
+    top: 5rem;
+    display: none;
+    .fnag{
+        background-color: #fff;
+        width: 100%;
+        ul{
+            width: 90%;
+            height: 37rem;
+            margin: 0 auto;
+            li{
+                width: 100%;
+                border-bottom: .1rem solid #D3D3D3;
+                height: 5rem;
+                display: flex;
+                line-height: 5rem;
+                align-items: center;
+                p{
+                    padding-left: 1rem;
+                    flex: 1;
+                    font-size: 1.4rem;
+                }
+                span{
+                    width: 2rem;
+                    height: 2rem;
+                    border: .1rem solid #b0b0b0;
+                }
+                .ss{
+                    background: url(../image/SecondHandList/ok.png) no-repeat 0 .2rem;
+                    background-size: 100%;
+                }
+                button{
+                    width: 100%;
+                    height: 5rem;
+                    background-color: #FF8A00;
+                    color: white;
+                    text-align: center;
+                    border: none;
+                   margin-top: 2rem;
+                   margin-bottom: 2rem;
+                    line-height: 5rem;
+                }
+            }
+            li:last-of-type{
+                border-bottom: none;
+            }
+        }
+    }
+}
+// 更多
+.top1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 11, 0.421);
+    position: absolute;
+    top: 5rem;
+    display: none;
+    .geng{
+        background-color: #fff;
+        width: 100%;
+        ul{
+            width: 90%;
+          margin: 0 auto;
+          .li{
+            width: 100%;
+            height: 18rem;
+          }
+          li{
+            width: 100%;
+            height: 14rem;
+            border-bottom: .1rem solid #b0b0b0;
+            h3{
+                height: 4rem;
+                line-height: 4rem;
+                font-size: 1.6rem;
+            }
+            .d2{
+                width: 100%;
+                height: 12rem;
+                display: flex;
+                flex-wrap: wrap;
+                p{
+                    text-align: center;
+                    width: 20%;
+                    margin-right: 3%;
+                    height: 3rem;
+                    line-height: 3rem;
+                    border: .1rem solid #CCCCCC;
+                }
+            }
+          }
+        }
+    }
+}
+}

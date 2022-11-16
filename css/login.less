@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.box {
+    width: 37.5rem;
+    height: 100vh;
+    margin: 0 auto;
+    min-width: 35rem;
+    max-width: 60rem;
+    background-color: rgb(245, 245, 245);
+    border: .1rem solid rgb(236, 236, 236);
+
+    iframe {
+        width: 100%;
+        height: 5.7rem;
+    }
+
+    &>p:nth-of-type(1) {
+        padding: 1.2rem 2rem;
+        font-size: 1.4rem;
+        border-bottom: .01rem rgb(192, 192, 192) solid;
+
+        &>a {
+            color: rgb(43, 43, 43);
+        }
+
+        &>a:nth-of-type(1) {
+            color: black;
+            font-weight: 600;
+        }
+    }
+
+    // 普通登录
+    &>div:nth-of-type(1) {
+        // display: none;
+
+        &>p:nth-of-type(1) {
+            display: flex;
+            font-size: 1.5rem;
+            text-align: center;
+
+            &>span:nth-of-type(1) {
+                width: 50%;
+                flex: 1;
+                padding: 1.5rem 0rem;
+                border-bottom: .5rem solid orange;
+            }
+
+            &>span:nth-of-type(2) {
+                width: 50%;
+                flex: 1;
+                padding: 1.5rem 0rem;
+                border-bottom: .5rem solid rgb(188, 188, 188);
+            }
+        }
+
+        &>P:nth-of-type(2),
+        &>P:nth-of-type(3) {
+            height: 5rem;
+            border-bottom: .1rem solid rgb(202, 202, 202);
+            margin-top: .1rem;
+
+            &>input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                font-size: 1.4rem;
+                text-indent: 2rem;
+            }
+        }
+
+        &>p:nth-of-type(4) {
+            width: 94%;
+            height: 5.5rem;
+            line-height: 5.5rem;
+            background-color: rgb(255, 138, 0);
+            border: none;
+            color: white;
+            font-size: 2.2rem;
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        &>p:nth-of-type(5) {
+            width: 94%;
+            margin: 0 auto;
+            display: flex;
+
+            &>a {
+                font-size: 1.4rem;
+                color: gray;
+            }
+
+            &>a:nth-of-type(1) {
+                color: orange;
+                width: 50%;
+                flex: 1;
+            }
+        }
+    }
+
+
+    // 验证码快捷登录
+    &>div:nth-of-type(2) {
+        display: none;
+
+        &>p:nth-of-type(1) {
+            display: flex;
+            font-size: 1.5rem;
+            text-align: center;
+
+            &>span:nth-of-type(1) {
+                width: 50%;
+                flex: 1;
+                padding: 1.5rem 0rem;
+                border-bottom: .5rem solid rgb(188, 188, 188);
+            }
+
+            &>span:nth-of-type(2) {
+                width: 50%;
+                flex: 1;
+                padding: 1.5rem 0rem;
+                border-bottom: .5rem solid orange;
+            }
+        }
+
+        &>P:nth-of-type(2),
+        &>P:nth-of-type(3) {
+            height: 5rem;
+            border-bottom: .1rem solid rgb(202, 202, 202);
+            margin-top: .1rem;
+
+            &>input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                font-size: 1.4rem;
+                text-indent: 2rem;
+            }
+        }
+
+        &>P:nth-of-type(2) {
+            &>input {
+                width: 68%;
+                height: 100%;
+                border: none;
+                outline: none;
+                text-indent: 2rem;
+            }
+
+            &>span {
+                padding: 1rem 2rem;
+                border: .1rem rgb(219, 219, 219) solid;
+            }
+        }
+
+        &>p:nth-of-type(4) {
+            width: 94%;
+            height: 5.5rem;
+            line-height: 5.5rem;
+            background-color: rgb(255, 138, 0);
+            border: none;
+            color: white;
+            font-size: 2.2rem;
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        &>p:nth-of-type(5) {
+            width: 94%;
+            margin: 0 auto;
+            display: flex;
+
+            &>a {
+                font-size: 1.4rem;
+                color: gray;
+            }
+
+            &>a:nth-of-type(1) {
+                color: orange;
+                width: 50%;
+                flex: 1;
+            }
+        }
+    }
+
+}

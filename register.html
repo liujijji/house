@@ -5,13 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./js/setRem.js"></script>
 </head>
 
 <body>
-
+    <div class="box">
+        <iframe src="./public.html" frameborder="0"></iframe>
+        <p>
+            <a href="./index.html">首页</a> >
+            <a id="is_n" href="javascript:void(0)">我的</a> >
+            <a href="./register.html">注册</a>
+        </p>
+        <div>
+            <p>
+                <input type="text" id="phone" placeholder="请输入11位手机号码">
+                <span id="send">发送验证码</span>
+                <span id="phone-text">请输入11位手机号</span>
+            </p>
+            <p>
+                <input type="text" id="verify" placeholder="请输入短信中的验证码">
+                <span id="verify-text">请输入验证码</span>
+            </p>
+            <p>
+                <input type="password" id="newpass" placeholder="请输入6-12位数字新密码">
+                <span id="pass_text">请输入6-12位密码</span>
+            </p>
+            <p id="ljze">立即注册</p>
+        </div>
+    </div>
 </body>
 
 </html>
+<script src="./js/cookie.js"></script>
+<script src="./register.js"></script>

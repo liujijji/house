@@ -5,13 +5,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <title>租房详情</title>
+    <link rel="stylesheet" href="./css/rentalDetails.css">
+    <script src="./js/setRem.js"></script>
 </head>
 
 <body>
-
+    <!-- 最大的盒子 -->
+    <div class="box">
+        <iframe src="./public.html" frameborder="0"></iframe>
+        <!-- 北京租房信息 -->
+        <div class="beijing">
+            <ul>
+                <li>
+                    <a href="./index.html" class="a1">首页</a> >
+                </li>
+                <li>
+                    <a href="./rentalList.html">北京租房</a> >
+                </li>
+                <li>
+                    <a href="./SecondHandDetails.html">房源信息</a> >
+                </li>
+            </ul>
+        </div>
+        <!-- 图片位置 -->
+        <div class="largermap">
+            <a href=""> <img src="./image/rentalList/banner.png" alt=""></a>
+            <!-- 定位部分 -->
+            <div><a href="">分享</a></div>
+        </div>
+        <!-- 关注 -->
+        <div class="attention">
+            <ul>
+                <li>
+                    <p>天鹅湾小区精装两居，满五唯一，业主换房急售</p>
+                </li>
+                <li>
+                    <!-- <img src="./image/rentalList/xin.png" alt=""> -->
+                    <p>关注</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 租金 -->
+        <div class="rental">
+            <ul>
+                <li>
+                    <p>租金</p>
+                    <span>2300元/月</span>
+                </li>
+                <li>
+                    <p>房型</p>
+                    <span>2室1厅</span>
+                </li>
+                <li>
+                    <p>面积</p>
+                    <span>204平米</span>
+                </li>
+            </ul>
+        </div>
+        <!-- 楼层详细 -->
+        <div class="level">
+            <ul>
+                <li>
+                    <p>楼层：高楼/17层</p>
+                    <p>朝向：南北</p>
+                </li>
+                <li>
+                    <p>装修：精装</p>
+                    <p>供暖：集体供暖</p>
+                </li>
+                <li>
+                    <p>年代：2007年</p>
+                    <p>楼型：板楼</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 经纪人房评 -->
+        <div class="appraiser">
+            <ul>
+                <li>
+                    <p>经纪人房评</p>
+                </li>
+                <li>
+                    <p>地理位置：晶都国际处于酒仙桥中心地带，毗邻 北京三大商圈，紧邻丽都商圈，隔四环与望京商 圈相望，西南紧挨燕莎商圈，地理位置优越。周 边配套：颐堤港商业中心，兆维大厦...</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 看房客户记录 -->
+        <div class="appraiser">
+            <ul>
+                <li>
+                    <p>看房客户记录</p>
+                </li>
+                <li>
+                    <p>近一个月新增0位看房客户，共50位</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 位置及周边 -->
+        <div class="ambitus">
+            <ul>
+                <li>
+                    <p>位置及周边 </p>
+                </li>
+                <li>
+                    <div>
+                        <p>地址: [黄村]时代龙和</p>
+                    </div>
+                    <iframe src="https://map.baidu.com/mobile/webapp/index/index/foo=bar/vt=map/" frameborder="0"></iframe>
+                </li>
+            </ul>
+        </div>
+        <!-- 小区成交史 -->
+        <div class="bargain">
+            <ul>
+                <li>
+                    <p>小区成交历史</p>
+                </li>
+                <li>
+                    <p>3 室 2 厅，146 平米, <span> 5000 元</span></p>
+                    <p>签约日期：2015-02-26</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 张三部分 -->
+        <div class="san">
+            <ul>
+                <li></li>
+                <li>
+                    <p>张三</p>
+                    <p>4001581855转0008</p>
+                </li>
+                <li>
+                    <p>致电</p>
+                </li>
+                <li>
+                    <p>短信</p>
+                </li>
+            </ul>
+        </div>
+        <iframe src="./公用部分.html" frameborder="0"></iframe>
+    </div>
 </body>
 
 </html>
+
+<script src="./js/touch-0.2.12.min.js"></script>
+
+<!-- 左滑或者右滑切换页面 -->
+<script>
+    // 找到最大的盒子
+    var box_ = document.getElementsByClassName('box')[0];
+    // console.log(box_);
+    // 左滑事件
+    touch.on(box_, 'swipeleft', function() {
+            // 我关注的小区
+            location.href = './myHouse.html'
+        })
+        // 右滑事件
+    touch.on(box_, 'swiperight', function() {
+        // 租房
+        location.href = './rentalList.html'
+
+    })
+</script>
