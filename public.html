@@ -38,6 +38,7 @@
 </body>
 
 </html>
+<script src="./js/cookie.js"></script>
 <script>
     var a1_ = document.getElementsByClassName('a1')[0]
     var a2_ = document.getElementsByClassName('a2')[0]
@@ -48,9 +49,9 @@
     a2_.onclick = function() {
         // 判断是否登录，跳转不同的页面
         if (getCookie('sign')) {
-            location.href = './myLogin.html'
+            parent.location.href = './myLogin.html'
         } else {
-            location.href = './my.html'
+            parent.location.href = './my.html'
         }
     }
     a3_.onclick = function() {
