@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>二手房</title>
     <link rel="stylesheet" href="./css/SecondHandList.css">
     <script src="./js/setRem.js"></script>
 </head>
@@ -263,3 +263,24 @@
 
 </html>
 <script src="./js/SecondHandList.js"></script>
+
+
+<!-- 滑动事件 -->
+<script src="./js/touch-0.2.12.min.js"></script>
+
+<!-- 左滑或者右滑切换页面 -->
+<script>
+    // 找到最大的盒子
+    var box_ = document.getElementsByClassName('box')[0];
+    // console.log(box_);
+    // 左滑事件
+    touch.on(box_, 'swipeleft', function() {
+            // 租房详情
+            location.href = './SecondHandDetails.html'
+        })
+        // 右滑事件
+    touch.on(box_, 'swiperight', function() {
+        // 首页
+        location.href = './index.html'
+    })
+</script>
