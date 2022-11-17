@@ -112,7 +112,8 @@
                     <div>
                         <p>地址: [黄村]时代龙和</p>
                     </div>
-                    <iframe src="https://map.baidu.com/mobile/webapp/index/index/foo=bar/vt=map/" frameborder="0"></iframe>
+                    <iframe src="https://map.baidu.com/mobile/webapp/index/index/foo=bar/vt=map/"
+                        frameborder="0"></iframe>
                 </li>
             </ul>
         </div>
@@ -158,12 +159,13 @@
     var box_ = document.getElementsByClassName('box')[0];
     // console.log(box_);
     // 左滑事件
-    touch.on(box_, 'swipeleft', function() {
-            // 我关注的小区
-            location.href = './myHouse.html'
-        })
-        // 右滑事件
-    touch.on(box_, 'swiperight', function() {
+    touch.on(box_, 'swipeleft', function () {
+        // 二手房
+        // location.href = './myHouse.html'
+        location.href = './SecondHandList.html'
+    })
+    // 右滑事件
+    touch.on(box_, 'swiperight', function () {
         // 租房
         location.href = './rentalList.html'
 
