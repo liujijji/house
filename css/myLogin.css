@@ -63,6 +63,10 @@
   background: url(../image/my/right.png) no-repeat 32.3rem 1.8rem;
   background-size: 1.2rem 2.2rem;
 }
+.box ul > li > a {
+  font-size: 1.4rem;
+  color: gray;
+}
 .box ul > li:last-of-type {
   border: none;
 }

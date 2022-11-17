@@ -5,6 +5,10 @@
   text-decoration: none;
   list-style: none;
 }
+a {
+  font-size: 1.6rem;
+  color: gray;
+}
 .box {
   width: 37.5rem;
   height: 100vh;
