@@ -30,10 +30,10 @@
                 <input type="search">
                 <span>|</span>
                 <span>
-            <a href="">
-                <img src="./image/SecondHandList/search_03.png" alt="">
-            </a>
-        </span>
+                    <a href="">
+                        <img src="./image/SecondHandList/search_03.png" alt="">
+                    </a>
+                </span>
             </div>
         </div>
         <!-- 选型区域 -->
@@ -324,14 +324,14 @@
     var box_ = document.getElementsByClassName('box')[0];
     // console.log(box_);
     // 左滑事件
-    touch.on(box_, 'swipeleft', function() {
-            // 租房详情
-            location.href = './rentalDetails.html'
-        })
-        // 右滑事件
-    touch.on(box_, 'swiperight', function() {
-        // 二手房
-        location.href = './SecondHandList.html'
+    touch.on(box_, 'swipeleft', function () {
+        // 租房详情
+        location.href = './rentalDetails.html'
+    })
+    // 右滑事件
+    touch.on(box_, 'swiperight', function () {
+        // 我关注的小区
+        location.href = './myHouse.html'
 
     })
 </script>

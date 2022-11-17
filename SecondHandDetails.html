@@ -159,7 +159,8 @@
                 <li>位置及周边 </li>
                 <li>
                     <!-- <iframe src="https://map.baidu.com/@12649521.59,4105848.27,13.62z" frameborder="0"></iframe> -->
-                    <iframe src="https://map.baidu.com/mobile/webapp/index/index/foo=bar/vt=map/" frameborder="0"></iframe>
+                    <iframe src="https://map.baidu.com/mobile/webapp/index/index/foo=bar/vt=map/"
+                        frameborder="0"></iframe>
                 </li>
             </ul>
         </div>
@@ -361,13 +362,14 @@
     var box_ = document.getElementsByClassName('box')[0];
     // console.log(box_);
     // 左滑事件
-    touch.on(box_, 'swipeleft', function() {
-            // 二手房
-            location.href = './SecondHandList.html'
-        })
-        // 右滑事件
-    touch.on(box_, 'swiperight', function() {
-        //租房
+    touch.on(box_, 'swipeleft', function () {
+        // 首页
+        // location.href = './SecondHandList.html'
+        location.href = './index.html'
+    })
+    // 右滑事件
+    touch.on(box_, 'swiperight', function () {
+        // 二手房
         location.href = './rentalList.html'
 
     })

@@ -98,14 +98,15 @@
     var box_ = document.getElementsByClassName('box')[0];
     // console.log(box_);
     // 左滑事件
-    touch.on(box_, 'swipeleft', function() {
-            // 首页
-            location.href = './index.html'
-        })
-        // 右滑事件
-    touch.on(box_, 'swiperight', function() {
+    touch.on(box_, 'swipeleft', function () {
         // 租房
+        // location.href = './index.html'
         location.href = './rentalList.html'
+    })
+    // 右滑事件
+    touch.on(box_, 'swiperight', function () {
+        // 首页
+        location.href = './index.html'
 
     })
 </script>
